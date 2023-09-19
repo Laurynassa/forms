@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novell Services</title>
+  </head>
+  <body>
+    <form action="/result.html" method="get">
+      <div>
+        <label for="Vardas">Vardas:</label>
+        <input type="text" id="Vardas" name="Vardas" required />
+      </div>
+      <div>
+        <label for="Pavardė">Pavardė:</label>
+        <input type="text" id="Pavardė" name="Pavardė" required />
+      </div>
+      <div>
+        <label for="Email">El.pastas</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="Slaptazodis">Slaptazodis</label>
+        <input type="password" id="Slaptazodis" name="Slaptazodis" />
+      </div>
+      <div>
+        <label for="Gatvė">Gatvė: </label>
+        <input id="Gatvė" name="Gatvė" />
+      </div>
+      <div>
+        <label for="Namo numeris">Iveskite namo numeri:</label>
+        <input id="namo numeris" name="namo numeris" />
+      </div>
+      <div>
+        <label for="Pristatymo adreso info">adreso informacija</label>
+        <select name="adresas" id="adresas">
+          <option value="">--Pasirinkite miesta</option>
+          <option for="miestas">Vilnius</option>
+          <option for="miestas">Kaunas</option>
+          <option for="miestas">Panevėžys</option>
+          <option for="miestas">Šiauliai</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>--Pasirinkite mokėjimo būda:</legend>
+        <div>
+          <input type="radio" id="Bankas" name="būda" value="Bankas" checked />
+          <label for="Bankas">Bankas</label>
+        </div>
+        <div>
+          <input type="radio" id="Grynais" name="būda" value="Grynais" />
+          <label for="Grynais">Grynais</label>
+        </div>
+        <div>
+          <input type="radio" id="Crypto" name="būda" value="Crypto" />
+          <label for="Crypto">Crypto</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>--Pasirinkite dovanėlę:</legend>
+        <div>
+          <input type="checkbox" id="Tušinukas" name="dovanėlę" checked />
+          <label for="Tušinukas">Tušinukas</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Balionas" name="dovanėlę" />
+          <label for="Balionas">Balionas</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Trintukas" name="dovanėlę" value="2" />
+          <label for="Trintukas">Trintukas</label>
+        </div>
+      </fieldset>
+      <div>
+        <label for="Komentarai">Komentarai,pastabos: </label>
+
+        <textarea
+          id="Komentarai,pastabos"
+          name="Komentarai,pastabos"
+          rows="10"
+          cols="50"
+          disabled
+        ></textarea>
+      </div>
+      <button type="submit" value="migtukas" name="migtukas">Uzsakyti</button>
+    </form>
+  </body>
+</html>
