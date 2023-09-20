@@ -13,8 +13,8 @@
           type="text"
           id="User"
           name="User"
-          placeholder="iveskite euser id (text or number)"
-          required
+          pattern="[A-Za-z0-9]{10}"
+          maxlength="10"
         />
       </div>
       <div>
@@ -27,6 +27,68 @@
           minlength="7"
           required
         />
+      </div>
+      <div>
+        <label for="Vardas">Vardas: </label>
+        <input type="text" id="Vardas" minlength="1" pattern="[A-Z][a-z]*" />
+      </div>
+      <div>
+        <label for="adresas">Adresas: </label>
+        <input type="text" id="adresas" maxlength="25" />
+      </div>
+      <div>
+        <label for="Pristatymo adreso info">Country</label>
+        <select name="adresas" id="adresas">
+          <!-- <option value="">Chose Country</option> -->
+          <option for="miestas">Lietuva</option>
+          <option for="miestas">Rusija</option>
+          <option for="miestas">Mexika</option>
+          <option for="miestas">Graikija</option>
+        </select>
+      </div>
+      <div>
+        <label for="zip">Zip kodas:</label>
+        <input type="number" minlength="1" min="0" />
+      </div>
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" required />
+      </div>
+      <fieldset>
+        <legend>Sex:</legend>
+        <div>
+          <input type="radio" id="Female" name="būda" value="Female" checked />
+          <label for="Female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="Male" name="būda" value="Male" />
+          <label for="Male">Male</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>--Pasirinkite kalba:</legend>
+        <div>
+          <input type="checkbox" id="Tušinukas" name="dovanėlę" checked />
+          <label for="Tušinukas">Anglu </label>
+        </div>
+        <div>
+          <input type="checkbox" id="Balionas" name="dovanėlę" />
+          <label for="Balionas">Lietuviu</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Trintukas" name="dovanėlę" value="2" />
+          <label for="Trintukas">vokieciu</label>
+        </div>
+      </fieldset>
+      <div>
+        <label for="Komentarai">About: </label>
+
+        <textarea
+          id="Komentarai,pastabos"
+          name="Komentarai,pastabos"
+          cols="50"
+          rows="10"
+        ></textarea>
       </div>
       <button type="submit" value="siusti" name="siusti">siusti</button>
     </form>
